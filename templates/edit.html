@@ -1,0 +1,11 @@
+<h1>Edit Menu</h1>
+<form method="POST">
+    <label>Nama Menu:</label>
+    <input type="text" name="nama_menu" value="{{ value[1] }}" required><br>
+    <label>Harga:</label>
+    <input type="number" name="harga" value="{{ value[2] }}" step="0.01" required><br>
+    <label>Deskripsi:</label>
+    <textarea name="deskripsi">{{ value[3] }}</textarea><br>
+    <button type="submit">Update</button>
+</form>
+<a href="/menu">Kembali ke Menu</a>
